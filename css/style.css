@@ -517,6 +517,122 @@
     
      }
 
+/* ................Responsive 2........................ */
+
+@media only screen and (max-width:392px){
+
+    
+    .right_nav_container a{
+        display: none;
+    }
+    .right_nav_container .moon{
+        margin-left: 40px;
+    }
+
+    .left_nav_container .home a{
+        text-align: center;
+        width: 100px;
+    }
+    .left_nav_container{
+        gap:40px;
+        margin-left: 30px;
+    
+    }
+
+    .home_page_container{
+        flex-direction: column;
+        height: 65vh;
+    }
+
+    .intro_section{
+        width: 100vw;
+        height: 250px;
+        margin-top: 100px;
+    }
+    .intro_section .text_section{
+        margin-left: 20px;
+    }
+
+    .text_section h1{
+        font-size: 20px;
+    }
+
+    .text_section h1 .span2{
+        margin-left: 32px;
+    }
+    .text_section h1 .span3{
+         margin-left: 32px;
+       
+    }
+
+    .my_link a i{
+        font-size: 20px;
+        height: 25px;
+        width: 25px;
+    }
+     .my_link{
+        margin-top: 20px;
+     }
+   .cv button{
+        margin: 20px;
+    }
+    
+
+    .img_section{
+        width: 100%;
+        margin-left: 100px;
+    }
+
+    .img_section img{
+        height: 250px;
+        opacity: 1;
+        animation: none;
+       margin:0 0 0 300px;
+      
+    }
+
+    .intro_paragraph{
+        margin-top: 10px;
+        width: 340px;
+        height: 300px;
+        transform: translateY(50px);
+    }
+    .intro_paragraph p{
+    font-size: 16px;
+
+}
+.my_introduction h1,.skills_container h1{
+    font-size: 40px;
+}
+.my_introduction p{
+    width: 310px;
+}
+.my_introduction, .introduction_container{
+    height: 400px;
+    height: 420px;
+}
+
+.skills_container{
+    height: 340px;
+}
+
+.my_skills{
+    width: 300px;
+    
+}
+
+.courses .imgs{
+    height: 80px;
+    width: 80px;
+}
+
+.imgs img{
+    height: 80px;
+    width: 80px;
+}
+    
+     }
+
 
 
     
