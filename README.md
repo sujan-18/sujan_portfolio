@@ -8,7 +8,7 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript.
 
 # Features
 
-- Fully responsive layout
+- Not Fully responsive (will responsive soon...)
 - About me section
 - Skills & projects
 - Contact form (Coming soon!)
