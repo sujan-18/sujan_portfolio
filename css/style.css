@@ -776,132 +776,195 @@ form input{
 
     }
 
+ /* ............responsive_2...................... */
+@media only screen and (max-width:392px){
+
+    .nav_container, .home_page_container, .introduction_container,body{
+        width: 430px;
+    }
+    .right_nav_container a{
+        display: none;
+    }
+    
+    .left_nav_container .sujan{
+        margin: 30px;
+    }
+    
+    .left_nav_container .home{
+        margin: 15px;
+    }
+    .home a{
+    width: 80px;
+    text-align: center;
+    
+}
+  .moon{
+        margin-left: 50px;
+    }
+.home_page_container{
+    height: 60vh;
+    flex-direction: column;
+}
+
+.intro_section{
+    margin-top: 70px;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+
+}
+
+.text_section h1{
+    font-size: 20px;
+}
+.text_section h1 .span1, .span2 ,.span3{
+    margin: 0;
+}
+
+
+.my_link a i{
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    
+}
+
+.img_wrapper{
+     height: 150px;
+    width: 150px;
+    margin-right: 250px;
+}
+.img_section{
+    height: 150px;
+    width: 150px;
+    
+
+}
+
+.img_section img{
+    height: 150px;
+    width: 150px;
+}
+.cv button{
+    margin-top: 20px;
+    height: 20px;
+    width: 110px;
+    margin-right: 40px;
+
+    
+     }
+     .introduction_container{
+        height: 420px;
+        margin: 0;
+     }
+     .my_introduction{
+     height: 400px;
+     margin: 0;
+     }
+    .my_introduction h1{
+        margin-top: 10px;
+        font-size: 30px;
+        margin-right: 40px;
+
+    }
+    .intro_paragraph{
+        height: 400px;
+        width: 300px;
+        margin-right: 40px;
+    }
+    .my_introduction p{
+        font-size: 16px;
+    }
+
+    .skills_container{
+        height: 400px;
+    }
+    .skills_container h1{
+        font-size: 30px;
+    }
+    .skills_container .text_skill{
+    margin-top: 10px;
+}
+
+    .courses .imgs{
+        height: 80px;
+        width: 80px;
+    }
+     .imgs img{
+    height: 100px;
+    width: 100px;
+     }
+    .my_skills{
+    
+        width: 200px;
+}
+
+.project_container{
+height: 1680px;
+margin-right: 40px;
+
+}
+.my_projects{
+    width: 250px;
+    margin-right: 40px;
+
+}
+#project_intro h1{
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+
+.project{
+    height: 250px;
+    width: 250px;
+}
+.project img{
+    height: 250px;
+    width: 250px;
+}
+
+.large_form_container{
+    height: 500px;
+}
+.form_container{
+    width: 250px;
+    height: 350px;
+    margin-right: 40px;
+
+}
+.large_form_container h2{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 40px;
+
+}
+form{
+    gap: 10px;
+}
+form input{
+    width: 200px;
+    height: 25px;
+
+}
+#input_here{
+    height: 100px;
+}
+.form_submit{
+    height: 25px;
+    width: 70px;
+}
+.footer_container .footer_text{
+    display: none;
+}
+.footer_container .contact, .email_1{
+    margin-right: 40px;
+}
+
+    }
+
 
 
 
 
 /* ................Responsive 2........................ */
-
-@media only screen and (max-width:392px){
-
-    
-    .right_nav_container a{
-        display: none;
-    }
-    .right_nav_container .moon{
-        margin-left: 40px;
-    }
-
-    .left_nav_container .home a{
-        text-align: center;
-        width: 100px;
-    }
-    .left_nav_container{
-        gap:40px;
-        margin-left: 30px;
-    
-    }
-
-    .home_page_container{
-        flex-direction: column;
-        height: 65vh;
-    }
-
-    .intro_section{
-        width: 100vw;
-        height: 250px;
-        margin-top: 100px;
-    }
-    .intro_section .text_section{
-        margin-left: 20px;
-    }
-
-    .text_section h1{
-        font-size: 20px;
-    }
-
-    .text_section h1 .span2{
-        margin-left: 32px;
-    }
-    .text_section h1 .span3{
-         margin-left: 32px;
-       
-    }
-
-    .my_link a i{
-        font-size: 20px;
-        height: 25px;
-        width: 25px;
-    }
-     .my_link{
-        margin-top: 20px;
-     }
-   .cv button{
-        margin: 20px;
-    }
-    
-
-    .img_section{
-        width: 100%;
-        margin-left: 100px;
-    }
-
-    .img_section img{
-        height: 250px;
-        opacity: 1;
-        animation: none;
-       margin:0 0 0 300px;
-      
-    }
-
-    .intro_paragraph{
-        margin-top: 10px;
-        width: 340px;
-        height: 300px;
-        transform: translateY(50px);
-    }
-    .intro_paragraph p{
-    font-size: 16px;
-
-}
-.my_introduction h1,.skills_container h1{
-    font-size: 40px;
-}
-.my_introduction p{
-    width: 310px;
-}
-.my_introduction, .introduction_container{
-    height: 400px;
-    height: 420px;
-}
-
-.skills_container{
-    height: 340px;
-}
-
-.my_skills{
-    width: 300px;
-    
-}
-
-.courses .imgs{
-    height: 80px;
-    width: 80px;
-}
-
-.imgs img{
-    height: 80px;
-    width: 80px;
-}
-    
-     }
-
-
-
-    
-
-
-
-
-
-
