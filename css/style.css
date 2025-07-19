@@ -590,7 +590,7 @@ color: antiquewhite;
 
 /* .................Responsive Part.................. */
 
-@media only screen and (max-width:430px){
+@media only screen and (max-width:431px){
 
     .nav_container, .home_page_container, .introduction_container,body{
         width: 430px;
@@ -621,9 +621,9 @@ color: antiquewhite;
 
 .intro_section{
     margin-top: 70px;
-    height: 200px;
+    height: 300px;
     width: 200px;
-    margin-right: 40px;
+    margin-left: 10px;
 
 }
 
@@ -632,6 +632,10 @@ color: antiquewhite;
 }
 .text_section h1 .span1, .span2 ,.span3{
     margin: 0;
+}
+
+.my_link{
+    margin-right: 20px;
 }
 
 
@@ -645,7 +649,7 @@ color: antiquewhite;
 .img_wrapper{
      height: 150px;
     width: 150px;
-    margin-right: 250px;
+    margin-right: 240px;
 }
 .img_section{
     height: 150px;
