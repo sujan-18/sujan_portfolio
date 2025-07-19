@@ -218,26 +218,47 @@
 
 /* ............................................... */
 
-.img_section{
-    height:600px ;
-    width: 30%;
-    /* background-color: #000000; */
+.img_wrapper{
+   width: 450px;
+    height: 500px;
     margin-left: 200px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    transition: transform 0.5s ease-out;
+    
+}
+
+.img_section{
+    width: 450px;
+    height: 500px;
+    animation: image_translate 2s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-200px);
+    border: 3px solid red;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+
 
 }
+
 
 .img_section img{
     border-radius: 50%;
+    width: 450px;
     height: 500px;
-    border: 3px solid red;
-    opacity: 0;
-    transform: translateX(-200px);
-    animation: image_translate 2s ease-out forwards;
 }
+
+.img_wrapper:hover{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transform:scale(1.03);
+
+
+}
+  
+
 
 /* ................................................................ */
 
@@ -356,6 +377,148 @@
     animation: git_img 3s ease-in-out infinite;
 }
 
+/* ....................................................................... */
+/*.................... Project_container................... */
+.project_container{
+    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(0deg,#000000, #3432c7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.my_projects{
+    height: 660px;
+    width: 1280px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#project_intro{
+    margin-top: 30px;
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#project_intro .project_intro{
+    color: red;
+}
+
+#project_intro h1{
+    font-size: 45px;
+}
+
+.project{
+    height: 280px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid red;
+    background-color: #000000;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.project img{
+    height: 280px;
+    width: 400px;
+}
+/* .......................................................... */
+
+.large_form_container{
+    height: 660px;
+    width: 100%;
+    background-image: linear-gradient(0deg,#000000, #3432c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: antiquewhite;
+}
+
+.large_form_container h2{
+    font-size: 35px;
+}
+
+.form_container{
+    height: 450px;
+    width: 350px;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_text{
+    color: red;
+}
+
+form{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    border: 0.5px solid red;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+#input_here{
+    height: 150px;
+}
+
+.form_submit{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    border: 0.5px solid red;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* ............................................................ */
+.footer_container{
+height: 90px;
+width: 100%;
+background-image: linear-gradient(0deg,#000000, #3432c7);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+color: antiquewhite;
+}
+
+.footer_container a{
+    color: antiquewhite;
+}
+
+
+
+
 
 
 
@@ -429,93 +592,193 @@
 
 @media only screen and (max-width:430px){
 
-    
+    .nav_container, .home_page_container, .introduction_container,body{
+        width: 430px;
+    }
     .right_nav_container a{
         display: none;
     }
-    .right_nav_container .moon{
-        margin-left: 80px;
-    }
-
-    .left_nav_container .home a{
-        text-align: center;
-        width: 100px;
-    }
-    .left_nav_container{
-        gap:40px;
-        margin-left: 30px;
     
+    .left_nav_container .sujan{
+        margin: 30px;
     }
-
-    .home_page_container{
-        flex-direction: column;
-        height: 80vh;
+    
+    .left_nav_container .home{
+        margin: 15px;
     }
-
-    .intro_section{
-        width: 100vw;
-        height: 400px;
-        margin-top: 100px;
-    }
-
-    .text_section h1{
-        font-size: 25px;
-    }
-
-    .text_section h1 .span2{
-        margin-left: 32px;
-    }
-    .text_section h1 .span3{
-         margin-left: 32px;
-       
-    }
-
-    .my_link a i{
-        font-size: 30px;
-    }
-
-    .img_section{
-        width: 100%;
-        margin-left: 100px;
-    }
-
-    .img_section img{
-        height: 350px;
-        opacity: 1;
-        animation: none;
-       margin:0 0 0 300px;
-      
-    }
-
-    .intro_paragraph{
-        width: 400px;
-        height: 250px;
-        transform: translateY(50px);
-    }
-    .intro_paragraph p{
-    font-size: 16px;
-
+    .home a{
+    width: 80px;
+    text-align: center;
+    
 }
-.my_introduction, .introduction_container{
-    height: 400px;
+  .moon{
+        margin-left: 50px;
+    }
+.home_page_container{
+    height: 60vh;
+    flex-direction: column;
+}
+
+.intro_section{
+    margin-top: 70px;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
 
 }
 
-.my_skills{
-    width: 300px;
+.text_section h1{
+    font-size: 20px;
+}
+.text_section h1 .span1, .span2 ,.span3{
+    margin: 0;
 }
 
-.courses .imgs{
-    height: 100px;
-    width: 100px;
+
+.my_link a i{
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    
 }
 
-.imgs img{
-    height: 100px;
-    width: 100px;
+.img_wrapper{
+     height: 150px;
+    width: 150px;
+    margin-right: 250px;
 }
+.img_section{
+    height: 150px;
+    width: 150px;
+    
+
+}
+
+.img_section img{
+    height: 150px;
+    width: 150px;
+}
+.cv button{
+    margin-top: 20px;
+    height: 20px;
+    width: 110px;
+    margin-right: 40px;
+
     
      }
+     .introduction_container{
+        height: 420px;
+        margin: 0;
+     }
+     .my_introduction{
+     height: 400px;
+     margin: 0;
+     }
+    .my_introduction h1{
+        margin-top: 10px;
+        font-size: 30px;
+        margin-right: 40px;
+
+    }
+    .intro_paragraph{
+        height: 400px;
+        width: 300px;
+        margin-right: 40px;
+    }
+    .my_introduction p{
+        font-size: 16px;
+    }
+
+    .skills_container{
+        height: 400px;
+    }
+    .skills_container h1{
+        font-size: 30px;
+    }
+    .skills_container .text_skill{
+    margin-top: 10px;
+}
+
+    .courses .imgs{
+        height: 80px;
+        width: 80px;
+    }
+     .imgs img{
+    height: 100px;
+    width: 100px;
+     }
+    .my_skills{
+    
+        width: 200px;
+}
+
+.project_container{
+height: 1680px;
+margin-right: 40px;
+
+}
+.my_projects{
+    width: 250px;
+    margin-right: 40px;
+
+}
+#project_intro h1{
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+
+.project{
+    height: 250px;
+    width: 250px;
+}
+.project img{
+    height: 250px;
+    width: 250px;
+}
+
+.large_form_container{
+    height: 500px;
+}
+.form_container{
+    width: 250px;
+    height: 350px;
+    margin-right: 40px;
+
+}
+.large_form_container h2{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 40px;
+
+}
+form{
+    gap: 10px;
+}
+form input{
+    width: 200px;
+    height: 25px;
+
+}
+#input_here{
+    height: 100px;
+}
+.form_submit{
+    height: 25px;
+    width: 70px;
+}
+.footer_container .footer_text{
+    display: none;
+}
+.footer_container .contact, .email_1{
+    margin-right: 40px;
+}
+
+    }
+
+
+
+
 
 /* ................Responsive 2........................ */
 
