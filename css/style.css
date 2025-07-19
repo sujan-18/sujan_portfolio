@@ -777,7 +777,7 @@ form input{
     }
 
  /* ............responsive_2...................... */
-@media only screen and (max-width:392px){
+@media only screen and (max-width:394px){
 
     .nav_container, .home_page_container, .introduction_container,body{
         width: 430px;
