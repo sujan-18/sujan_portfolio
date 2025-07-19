@@ -802,13 +802,13 @@ form input{
         margin-left: 50px;
     }
 .home_page_container{
-    height: 60vh;
+    height: 65vh;
     flex-direction: column;
 }
 
 .intro_section{
     margin-top: 70px;
-    height: 200px;
+    height: 300px;
     width: 200px;
     margin-right: 40px;
 
@@ -846,11 +846,7 @@ form input{
     width: 150px;
 }
 .cv button{
-    margin-top: 20px;
-    height: 20px;
-    width: 110px;
-    margin-right: 40px;
-
+   display: none;
     
      }
      .introduction_container{
